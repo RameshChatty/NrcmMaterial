@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.welcome.nrcmmaterial">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/nrcm_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Cse"
+            android:parentActivityName=".BranchesListActivity"
+            android:label="Regulations"/>
+        <activity
+            android:name=".Ece"
+            android:parentActivityName=".BranchesListActivity"
+            android:label="Regulations"/>
+        <activity
+            android:name=".R15"
+            android:parentActivityName=".Cse"
+            android:label="Semester"/>
+        <activity
+            android:name=".FirstYear"
+            android:parentActivityName=".Cse"
+           android:label="Subjects" />
+        <activity android:name=".Web1" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".BranchesListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NavigationActivity"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".R16"
+            android:parentActivityName=".Cse"
+            android:label="Subjects"/>
+        <activity
+            android:name=".R17"
+            android:parentActivityName=".Cse"
+            android:label="Subjects"/>
+        <activity
+            android:name=".EceR15"
+            android:parentActivityName=".Ece"
+            android:label="Subjects"/>
+        <activity
+            android:name=".EceR16"
+            android:parentActivityName=".Ece"
+            android:label="Subjects"/>
+        <activity
+            android:name=".EceR17"
+            android:parentActivityName=".Ece"
+            android:label="Subjects"/>
+        <activity
+            android:name=".TwoOne"
+            android:parentActivityName=".R15"
+            android:label="Subjects"/>
+        <activity
+            android:name=".TwoTwo"
+            android:parentActivityName=".R15"
+            android:label="Subjects"/>
+        <activity
+            android:name=".ThreeOne"
+            android:parentActivityName=".R15"
+            android:label="Subjects"/>
+        <activity
+            android:name=".ThreeTwo"
+            android:parentActivityName=".R15"
+            android:label="Subjects"/>
+        <activity
+            android:name=".FourOne"
+            android:parentActivityName=".R15"
+            android:label="Subjects"/>
+        <activity
+            android:name=".FourTwo"
+            android:parentActivityName=".R15"
+            android:label="Subjects"/>
+        <activity
+            android:name=".CseR15Cp"
+            android:parentActivityName=".FirstYear"
+            android:label="Materials"/>
+        <activity
+            android:name=".CpUnit1Web"
+            android:parentActivityName=".CseR15Cp"
+            android:label="Materials"/>
+        <activity
+            android:name=".CpUnit2Web"
+            android:parentActivityName=".CseR15Cp"
+            android:label="Materials"/>
+        <activity
+            android:name=".CpUnit3Web"
+            android:parentActivityName=".CseR15Cp"
+            android:label="Materials"/>
+        <activity
+            android:name=".CpUnit4Web"
+            android:parentActivityName=".CseR15Cp"
+            android:label="Materials"/>
+        <activity
+            android:name=".CpUnit5Web"
+            android:parentActivityName=".CseR15Cp"
+            android:label="Materials"/>
+        <activity
+            android:name=".CpUnit6Web"
+            android:parentActivityName=".CseR15Cp"
+            android:label="Materials"/>
+        <activity
+            android:name=".CseR15Eng"
+            android:parentActivityName=".FirstYear"
+            android:label="Materials"/>
+        <activity
+            android:name=".CseR15Edp"
+            android:parentActivityName=".FirstYear"
+            android:label="Materials"/>
+        <activity
+            android:name=".CseR15Phy"
+            android:parentActivityName=".FirstYear" android:label="Materials"/>
+        <activity
+            android:name=".CseR15Chem"
+            android:parentActivityName=".FirstYear" android:label="Materials"/>
+        <activity
+            android:name=".CseR15M1"
+            android:parentActivityName=".FirstYear" android:label="Materials"/>
+        <activity
+            android:name=".CseR15Mm"
+            android:parentActivityName=".FirstYear" />
+        <activity
+            android:name=".CseR15PhyChemLab"
+            android:parentActivityName=".FirstYear" />
+        <activity
+            android:name=".CseR15CpLab"
+            android:parentActivityName=".FirstYear" />
+        <activity
+            android:name=".CseR15ItWkshpLab"
+            android:parentActivityName=".FirstYear" />
+        <activity
+            android:name=".CseR15EngLab"
+            android:parentActivityName=".FirstYear" />
+        <activity
+            android:name=".CseR15Pbb"
+            android:parentActivityName=".TwoOne" />
+        <activity
+            android:name=".CseR15Mfcs"
+            android:parentActivityName=".TwoOne" />
+        <activity
+            android:name=".CseR15Ds"
+            android:parentActivityName=".TwoOne" />
+        <activity
+            android:name=".CseR15Dld"
+            android:parentActivityName=".TwoOne" />
+        <activity
+            android:name=".CseR15Edc"
+            android:parentActivityName=".TwoOne" />
+        <activity
+            android:name=".CseR15Bee"
+            android:parentActivityName=".TwoOne" />
+        <activity
+            android:name=".CseR15EdcLab"
+            android:parentActivityName=".TwoOne" />
+        <activity
+            android:name=".CseR15DsLab"
+            android:parentActivityName=".TwoOne" />
+        <activity
+            android:name=".CseR15JpLab"
+            android:parentActivityName=".TwoTwo" />
+        <activity
+            android:name=".CseR15DbmsLab"
+            android:parentActivityName=".TwoTwo" />
+        <activity
+            android:name=".CseR15Daa"
+            android:parentActivityName=".TwoTwo" />
+        <activity
+            android:name=".CseR15Flat"
+            android:parentActivityName=".TwoTwo" />
+        <activity
+            android:name=".CseR15Es"
+            android:parentActivityName=".TwoTwo" />
+        <activity
+            android:name=".CseR15Jp"
+            android:parentActivityName=".TwoTwo" />
+        <activity
+            android:name=".CseR15Co"
+            android:parentActivityName=".TwoTwo" />
+        <activity
+            android:name=".CseR15Dbms"
+            android:parentActivityName=".TwoTwo" />
+        <activity
+            android:name=".BeeUnit1Web"
+            android:parentActivityName=".CseR15Bee" />
+        <activity
+            android:name=".BeeUnit2Web"
+            android:parentActivityName=".CseR15Bee" />
+        <activity
+            android:name=".BeeUnit3Web"
+            android:parentActivityName=".CseR15Bee" />
+        <activity
+            android:name=".BeeUnit4Web"
+            android:parentActivityName=".CseR15Bee" />
+        <activity
+            android:name=".BeeUnit5Web"
+            android:parentActivityName=".CseR15Bee" />
+        <activity
+            android:name=".BeeUnit6Web"
+            android:parentActivityName=".CseR15Bee" />
+        <activity
+            android:name=".EngUnit6Web"
+            android:parentActivityName=".CseR15Eng" />
+        <activity
+            android:name=".EngUnit5Web"
+            android:parentActivityName=".CseR15Eng" />
+        <activity
+            android:name=".EngUnit4Web"
+            android:parentActivityName=".CseR15Eng" />
+        <activity
+            android:name=".EngUnit3Web"
+            android:parentActivityName=".CseR15Eng" />
+        <activity
+            android:name=".EngUnit2Web"
+            android:parentActivityName=".CseR15Eng" />
+        <activity
+            android:name=".EngUnit1Web"
+            android:parentActivityName=".CseR15Eng" />
+        <activity
+            android:name=".ChemUnit6Web"
+            android:parentActivityName=".CseR15Chem" />
+        <activity
+            android:name=".ChemUnit5Web"
+            android:parentActivityName=".CseR15Chem" />
+        <activity
+            android:name=".ChemUnit4Web"
+            android:parentActivityName=".CseR15Chem" />
+        <activity
+            android:name=".ChemUnit3Web"
+            android:parentActivityName=".CseR15Chem" />
+        <activity
+            android:name=".ChemUnit2Web"
+            android:parentActivityName=".CseR15Chem" />
+        <activity
+            android:name=".ChemUnit1Web"
+            android:parentActivityName=".CseR15Chem" />
+        <activity
+            android:name=".CoUnit6Web"
+            android:parentActivityName=".CseR15Co" />
+        <activity
+            android:name=".CoUnit5Web"
+            android:parentActivityName=".CseR15Co" />
+        <activity
+            android:name=".CoUnit4Web"
+            android:parentActivityName=".CseR15Co" />
+        <activity
+            android:name=".CoUnit3Web"
+            android:parentActivityName=".CseR15Co" />
+        <activity
+            android:name=".CoUnit2Web"
+            android:parentActivityName=".CseR15Co" />
+        <activity
+            android:name=".CoUnit1Web"
+            android:parentActivityName=".CseR15Co" />
+        <activity
+            android:name=".DaaUnit1Web"
+            android:parentActivityName=".CseR15Daa" />
+        <activity
+            android:name=".DaaUnit2Web"
+            android:parentActivityName=".CseR15Daa" />
+        <activity
+            android:name=".DaaUnit3Web"
+            android:parentActivityName=".CseR15Daa" />
+        <activity
+            android:name=".DaaUnit4Web"
+            android:parentActivityName=".CseR15Daa" />
+        <activity
+            android:name=".DaaUnit5Web"
+            android:parentActivityName=".CseR15Daa" />
+        <activity
+            android:name=".DaaUnit6Web"
+            android:parentActivityName=".CseR15Daa" />
+        <activity
+            android:name=".DbmsUnit1Web"
+            android:parentActivityName=".CseR15Dbms" />
+        <activity
+            android:name=".DbmsUnit2Web"
+            android:parentActivityName=".CseR15Dbms" />
+        <activity
+            android:name=".DbmsUnit3Web"
+            android:parentActivityName=".CseR15Dbms" />
+        <activity
+            android:name=".DbmsUnit4Web"
+            android:parentActivityName=".CseR15Dbms" />
+        <activity
+            android:name=".DbmsUnit5Web"
+            android:parentActivityName=".CseR15Dbms" />
+        <activity
+            android:name=".DbmsUnit6Web"
+            android:parentActivityName=".CseR15Dbms" />
+        <activity
+            android:name=".DldUnit1Web"
+            android:parentActivityName=".CseR15Dld" />
+        <activity
+            android:name=".DldUnit2Web"
+            android:parentActivityName=".CseR15Dld" />
+        <activity
+            android:name=".DldUnit3Web"
+            android:parentActivityName=".CseR15Dld" />
+        <activity
+            android:name=".DldUnit4Web"
+            android:parentActivityName=".CseR15Dld" />
+        <activity
+            android:name=".DldUnit5Web"
+            android:parentActivityName=".CseR15Dld" />
+        <activity
+            android:name=".DldUnit6Web"
+            android:parentActivityName=".CseR15Dld" />
+        <activity
+            android:name=".DsUnit6Web"
+            android:parentActivityName=".CseR15Ds" />
+        <activity
+            android:name=".DsUnit5Web"
+            android:parentActivityName=".CseR15Ds" />
+        <activity
+            android:name=".DsUnit4Web"
+            android:parentActivityName=".CseR15Ds" />
+        <activity
+            android:name=".DsUnit3Web"
+            android:parentActivityName=".CseR15Ds" />
+        <activity
+            android:name=".DsUnit2Web"
+            android:parentActivityName=".CseR15Ds" />
+        <activity
+            android:name=".DsUnit1Web"
+            android:parentActivityName=".CseR15Ds" />
+        <activity
+            android:name=".EdcUnit1Web"
+            android:parentActivityName=".CseR15Edc" />
+        <activity
+            android:name=".EdcUnit2Web"
+            android:parentActivityName=".CseR15Edc" />
+        <activity
+            android:name=".EdcUnit3Web"
+            android:parentActivityName=".CseR15Edc" />
+        <activity
+            android:name=".EdcUnit4Web"
+            android:parentActivityName=".CseR15Edc" />
+        <activity
+            android:name=".EdcUnit5Web"
+            android:parentActivityName=".CseR15Edc" />
+        <activity
+            android:name=".EdcUnit6Web"
+            android:parentActivityName=".CseR15Edc" />
+        <activity
+            android:name=".EdpUnit6Web"
+            android:parentActivityName=".CseR15Edp" />
+        <activity
+            android:name=".EdpUnit5Web"
+            android:parentActivityName=".CseR15Edp" />
+        <activity
+            android:name=".EdpUnit4Web"
+            android:parentActivityName=".CseR15Edp" />
+        <activity
+            android:name=".EdpUnit3Web"
+            android:parentActivityName=".CseR15Edp" />
+        <activity
+            android:name=".EdpUnit2Web"
+            android:parentActivityName=".CseR15Edp" />
+        <activity
+            android:name=".EdpUnit1Web"
+            android:parentActivityName=".CseR15Edp" />
+        <activity android:name=".CseR15DistributedSystem" android:label="Distributed System" android:parentActivityName=".ThreeTwo"/>
+        <activity android:name=".CseR15Ism" android:label="Ism" android:parentActivityName=".ThreeTwo" />
+        <activity android:name=".CseR15Is" android:label="Information Security" android:parentActivityName=".ThreeTwo"/>
+        <activity android:name=".CseR15Ia" android:label="Ia" android:parentActivityName=".ThreeTwo"/>
+        <activity android:name=".CseR15Ooad" android:label="OOAD" android:parentActivityName=".ThreeTwo"/>
+        <activity android:name=".CseR15Wt" android:label="Web Technologies" android:parentActivityName=".ThreeTwo"/>
+        <activity android:name=".CseR15Stm" android:label="Software Testing Methodologies" android:parentActivityName=".ThreeTwo"/>
+        <activity android:name=".CseR15Mefa" android:label="MEFA" android:parentActivityName=".ThreeTwo"/>
+        <activity android:name=".CseR15AcsLab" android:label="ACS Lab" android:parentActivityName=".ThreeTwo"/>
+        <activity android:name=".CseR15CtWtLab" android:label="CT And WT " android:parentActivityName=".ThreeTwo"/>
+        <activity android:name=".DSystemsUnit1Web" android:label="DS Materials" android:parentActivityName=".CseR15DistributedSystem"/>
+        <activity android:name=".DSystemsUnit2Web" android:label="DS Materials" android:parentActivityName=".CseR15DistributedSystem"/>
+        <activity android:name=".DSystemsUnit3Web" android:label="DS Materials" android:parentActivityName=".CseR15DistributedSystem"/>
+        <activity android:name=".DSystemsUnit4Web" android:label="DS Materials" android:parentActivityName=".CseR15DistributedSystem"/>
+        <activity android:name=".DSystemsUnit6Web" android:label="DS Materials" android:parentActivityName=".CseR15DistributedSystem"/>
+        <activity android:name=".DSystemsUnit5Web" android:label="DS Materials" android:parentActivityName=".CseR15DistributedSystem" />
+        <activity android:name=".IsUnit6Web" android:label="IS Materials" android:parentActivityName=".CseR15Is"/>
+        <activity android:name=".IsUnit5Web" android:label="IS Materials" android:parentActivityName=".CseR15Is"/>
+        <activity android:name=".IsUnit4Web" android:label="IS Materials" android:parentActivityName=".CseR15Is"/>
+        <activity android:name=".IsUnit3Web" android:label="IS Materials" android:parentActivityName=".CseR15Is"/>
+        <activity android:name=".IsUnit2Web" android:label="IS Materials" android:parentActivityName=".CseR15Is"/>
+        <activity android:name=".IsUnit1Web" android:label="IS Materials" android:parentActivityName=".CseR15Is"/>
+        <activity android:name=".OoadUnit1Web" android:label="OOAD Materials" android:parentActivityName=".CseR15Ooad"/>
+        <activity android:name=".OoadUnit2Web" android:label="OOAD Materials" android:parentActivityName=".CseR15Ooad"/>
+        <activity android:name=".OoadUnit3Web" android:label="OOAD Materials" android:parentActivityName=".CseR15Ooad"/>
+        <activity android:name=".OoadUnit4Web" android:label="OOAD Materials" android:parentActivityName=".CseR15Ooad"/>
+        <activity android:name=".OoadUnit5Web" android:label="OOAD Materials" android:parentActivityName=".CseR15Ooad"/>
+        <activity android:name=".OoadUnit6Web" android:label="OOAD Materials" android:parentActivityName=".CseR15Ooad"/>
+        <activity android:name=".WtUnit1Web" android:label="WT Materials" android:parentActivityName=".CseR15Wt"/>
+        <activity android:name=".WtUnit2Web" android:label="WT Materials" android:parentActivityName=".CseR15Wt"/>
+        <activity android:name=".WtUnit3Web" android:label="WT Materials" android:parentActivityName=".CseR15Wt"/>
+        <activity android:name=".WtUnit4Web" android:label="WT Materials" android:parentActivityName=".CseR15Wt"/>
+        <activity android:name=".WtUnit5Web" android:label="WT Materials" android:parentActivityName=".CseR15Wt"/>
+        <activity android:name=".WtUnit6Web" android:label="WT Materials" android:parentActivityName=".CseR15Wt"/>
+        <activity android:name=".StmUnit6Web" android:label="STM Materials" android:parentActivityName=".CseR15Stm"/>
+        <activity android:name=".StmUnit5Web" android:label="STM Materials" android:parentActivityName=".CseR15Stm"/>
+        <activity android:name=".StmUnit4Web" android:label="STM Materials" android:parentActivityName=".CseR15Stm"/>
+        <activity android:name=".StmUnit3Web" android:label="STM Materials" android:parentActivityName=".CseR15Stm"/>
+        <activity android:name=".StmUnit2Web" android:label="STM Materials" android:parentActivityName=".CseR15Stm" />
+        <activity android:name=".StmUnit1Web" android:label="STM Materials" android:parentActivityName=".CseR15Stm"/>
+        <activity android:name=".MefaUnit6Web" android:label="MEFA Materials" android:parentActivityName=".CseR15Mefa" />
+        <activity android:name=".MefaUnit5Web" android:label="MEFA Materials" android:parentActivityName=".CseR15Mefa"/>
+        <activity android:name=".MefaUnit4Web" android:label="MEFA Materials" android:parentActivityName=".CseR15Mefa"/>
+        <activity android:name=".MefaUnit3Web" android:label="MEFA Materials" android:parentActivityName=".CseR15Mefa" />
+        <activity android:name=".MefaUnit2Web" android:label="MEFA Materials" android:parentActivityName=".CseR15Mefa"/>
+        <activity android:name=".MefaUnit1Web" android:label="MEFA Materials" android:parentActivityName=".CseR15Mefa">
+            android:label="Materials"
+        </activity>
+    </application>
+
+</manifest>
